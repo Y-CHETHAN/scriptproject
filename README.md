@@ -25,7 +25,7 @@ Publish the website in the given URL.
 ```
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Mathematical Operations</title>
@@ -79,7 +79,7 @@ Publish the website in the given URL.
                         <button type="button" name="button_cal1" id="button_cal1">Calculate</button>
                     </div>
                     <div class="forminput">
-                        <button type="reset" name="reset" id="reset">Reset</button>
+                        <button type="reset1" name="reset1" id="reset">Reset</button>
                     </div>
                     <div class="forminput">
                         <label for="value_v">Volume=</label>
