@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mathematical Operations</title>
+    <link rel="stylesheet" href="{% static 'css/mathscript.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                AREA OF A CIRCLE
+            </div>
+            <div class="content">
+                <form action="area" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_r">Radius=</label>
+                        <input type="text" name="value_r" id="value_r">
+                    </div>
+                    <div class="forminput">
+                        <button type="button" name="button_cal" id="button_cal">Calculate</button>
+                    </div>
+                    <div class="forminput">
+                        <button type="reset" name="reset" id="reset">Reset</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="value_c">Area=</label>
+                        <input type="text" name="value_c" id="value_c">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                VOLUME OF A CYLINDER
+            </div>
+            <div class="content">
+                <form action="volume" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_r1">Radius=</label>
+                        <input type="text" name="value_r1" id="value_r1">
+                    </div>
+                    <div class="forminput">
+                        <label for="value_h">Height=</label>
+                        <input type="text" name="value_h" id="value_h">
+                    </div>
+                    <div class="forminput">
+                        <button type="button" name="button_cal1" id="button_cal1">Calculate</button>
+                    </div>
+                    <div class="forminput">
+                        <button type="reset" name="reset1" id="reset1">Reset</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="value_v">Volume=</label>
+                        <input type="text" name="value_v" id="value_v" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/mathscript.js"></script>
+</body>
+
+</html>
